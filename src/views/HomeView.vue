@@ -1,5 +1,6 @@
 <template>
 <div>
+  <PainelNoticias/>
   <div class="home">
     <img src="https://images.pexels.com/photos/268481/pexels-photo-268481.jpeg?cs=srgb&dl=pexels-pixabay-268481.jpg&fm=jpg">
     <p>Mais um ano se passou e não conseguimos estar juntinhos na rua do jeito que a gente gosta, mas isso não quer dizer que 
@@ -12,12 +13,12 @@
 
 <script>
 // @ is an alias to /src
-//import HelloWorld from '@/components/HelloWorld.vue'
+import PainelNoticias from '@/components/PainelNoticias.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    //
+    PainelNoticias
   }
 }
 </script>
