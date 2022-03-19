@@ -42,11 +42,4 @@ export default {
 
 <style scoped>
 
-@import:http://.....
-
-.fonte {
-  font-style: 'Roboto', sans-serif,
-  
-}
-
 </style>
