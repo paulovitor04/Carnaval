@@ -10,7 +10,18 @@
       <tbody>
         <tr v-for="(escola, index) of listaEscolas" :key="escola.id">
           <td class="nao">{{ index + 1 }}</td>          
-          <td> {{ escola.name }}</td>
+          <td> 
+
+            <router-link to="/escola-de-samba">
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>{{ escola.name }}</v-list-item-title>
+          </v-list-item>
+          </router-link>
+
+          </td>
           <td class="text-right"> {{ escola.address }}</td>
         </tr>
       </tbody>
@@ -41,6 +52,10 @@ export default {
 <style scoped>
 .nao {
     display: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 </style>
