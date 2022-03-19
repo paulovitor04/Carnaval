@@ -28,13 +28,15 @@
          <div class="comentarios">
             <div class="usuario">
                 <div class="foto">
+                    <figure>
                     <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80">
+                    </figure>
                 </div>
-                <div class="informacoes">                
+                <div class="comentario">                
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi alias unde nisi quisquam doloribus perspiciatis, molestiae est nostrum reprehenderit explicabo earum dolores cumque ratione quo, aliquid incidunt quas sapiente provident!             
                 </div>
             </div>      
-         </div>
+        </div>
     </div>        
     </div>
 </template>
@@ -78,20 +80,22 @@ h1 {
     margin: 10px;
 }
 .comentario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    max-width: 80%;
-}
+    width: 90%;
+}  
 .usuario {
-     justify-content: space-between;
+    padding: rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-.foto {
-    width: 25%;
+.foto figure {
+    width: 10%;
 }
 .foto img {
     border-radius: 50%;
+    width: 50px;
+}
+.comentario {
+    width: 90%;
 }
 </style>
