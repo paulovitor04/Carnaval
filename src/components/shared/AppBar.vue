@@ -34,12 +34,30 @@
           </v-list-item>
           </router-link>
 
+          <router-link to="/escolas-de-samba">
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Escolas de Samba</v-list-item-title>
+          </v-list-item>
+          </router-link>
+
           <router-link to="/about">
           <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-account-tie</v-icon>
             </v-list-item-icon>
             <v-list-item-title>About</v-list-item-title>
+          </v-list-item>
+          </router-link>
+
+          <router-link to="/escola-de-samba">
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>samba!!!</v-list-item-title>
           </v-list-item>
           </router-link>
 
