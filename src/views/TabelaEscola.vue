@@ -27,7 +27,7 @@
 
         <tr>       
           <td>
-            <router-link to="/filhos-de-ghandy'">
+            <router-link to="/filhos-de-ghandy">
               {{ listaEscolas[2].name }}
             </router-link>
           </td>
