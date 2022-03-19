@@ -11,14 +11,30 @@
             <p class="informacoes" >
                 {{listaEscolas[0].description}}
             </p>
-        <h2 class="titulos"> Eventos </h2>
+        <h2 class="titulos"> Próximas datas </h2>
             <p class="informacoes">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tenetur exercitationem recusandae ad, at atque soluta dicta alias voluptates ex ullam et odit vero perferendis illum quidem fugiat corporis autem!
+               <ul>
+                   <li>
+                     <strong>Próximos ensaios: </strong> <br> 19/04 <br> 19/05 <br> 19/06
+                   </li>
+                   <li>
+                     <strong>Próximas apresentações:</strong> <br> 25/07 <br> 25/08 <br> 25/09 
+                   </li>
+               </ul>
+               
+                
             </p>
-         <h2 class="titulos"> Vocês por aqui </h2>
-             <p class="informacoes">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi alias unde nisi quisquam doloribus perspiciatis, molestiae est nostrum reprehenderit explicabo earum dolores cumque ratione quo, aliquid incidunt quas sapiente provident!
-             </p>        
+            <h2 class="titulos"> Vocês por aqui </h2>
+         <div class="comentarios">
+            <div class="usuario">
+                <div class="foto">
+                    <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80">
+                </div>
+                <div class="informacoes">                
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi alias unde nisi quisquam doloribus perspiciatis, molestiae est nostrum reprehenderit explicabo earum dolores cumque ratione quo, aliquid incidunt quas sapiente provident!             
+                </div>
+            </div>      
+         </div>
     </div>        
     </div>
 </template>
@@ -60,5 +76,22 @@ h1 {
 }
 .informacoes {
     margin: 10px;
+}
+.comentario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 80%;
+}
+.usuario {
+     justify-content: space-between;
+}
+.foto {
+    width: 25%;
+}
+.foto img {
+    border-radius: 50%;
 }
 </style>
