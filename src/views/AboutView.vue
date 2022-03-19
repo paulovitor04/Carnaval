@@ -1,24 +1,35 @@
 <template>
   <v-container>
-    <h2 class="text-h5 text-center mb-3 mt-5">Lista de Escolas de Samba</h2>
-
-    <v-simple-table>
-    <template v-slot:default>
-      <thead>
-        <tr>
-          <th colspan="2" class="text-left">
-            Escolas de Samba
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="escola of listaEscolas" :key="escola.name">
-          <td>{{ escola.name }}</td>
-        </tr>
-      </tbody>
-    </template>
-  </v-simple-table>
-
+    <div>
+        <h2>Projeto</h2>
+          <p>
+             Como desafio para o projeto Decola, desenvolvemos essa aplicação que visa aproximar o público das escolas de samba, setor prejudicado durante a pandemia que vivemos. <br>
+             A ideia dela é ser um canal de comunicação e divulgação.
+          </p>
+    </div>
+    <div>
+        <h2>Contatos</h2>
+      <h3> Angela Alves </h3>
+        <p> 
+          <a href="https://www.linkedin.com/in/angelavbalves/" target="_blank"> Linkedin</a> <br>
+          <a href="https://github.com/angelavbalves">GitHub</a>
+        </p>
+      <h3>Marcelo Klein</h3>
+        <p>
+          <a href="https://www.linkedin.com/in/marelso/" target="_blank"> Linkedin </a> <br>
+          <a href="github.com/marelso">GitHub</a>
+        </p>
+      <h3>Paulo Vitor </h3>
+      <p>
+          <a href=" https://www.linkedin.com/in/paulo-vitor-de-oliveira-bb257413a/ " target="_blank"> Linkedin </a> <br>
+          <a href="https://github.com/paulovitor04">GitHub</a>
+        </p>
+        <h3>Ted Martins</h3>
+        <p>
+          <a href="https://www.linkedin.com/in/tedmartins/" target="_blank"> Linkedin </a> <br>
+          <a href="https://github.com/TedMartins">GitHub</a>
+        </p>
+    </div>    
   </v-container>
 </template>
 
@@ -41,5 +52,7 @@ export default {
 </script>
 
 <style scoped>
-
+a {
+  text-decoration: none;
+}
 </style>
