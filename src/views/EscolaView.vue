@@ -5,7 +5,7 @@
                 <h1>{{ listaEscolas[0].name }}</h1>
             </tbody>          
         </h2>
-        <img src="https://www.correio24horas.com.br/fileadmin/_processed_/2/d/csm_faixa_carnaval_de1dfb906e.jpg" width="35%">  
+        <img :src="listaEscolas[0].photo" width="35%">  
     <div class="conteudo">
         <h2 class="titulos"> História </h2>        
             <p class="informacoes" >
