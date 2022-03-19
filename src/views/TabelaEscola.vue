@@ -3,27 +3,109 @@
     <template v-slot:default>
       <thead>
         <tr>
-          <th colspan="2" class="text-left">Escola</th>
-          <th class="text-right">Cidade</th>
+          <th colspan="2" class="text-left">Escola de Samba:</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(escola, index) of listaEscolas" :key="escola.id">
-          <td class="nao">{{ index + 1 }}</td>          
-          <td> 
-
-            <router-link to="/escola-de-samba">
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>{{ escola.name }}</v-list-item-title>
-          </v-list-item>
-          </router-link>
-
+        <tr>       
+          <td>
+            <router-link to="/mudanca-do-garcia">
+              {{ listaEscolas[0].name }}
+            </router-link>
           </td>
-          <td class="text-right"> {{ escola.address }}</td>
+          <td class="text-right"> {{ listaEscolas[0].address }}</td>
         </tr>
+
+        <tr>       
+          <td>
+            <router-link to="/ile-aiye">
+              {{ listaEscolas[1].name }}
+            </router-link>
+          </td>
+          <td class="text-right"> {{ listaEscolas[1].address }}</td>
+        </tr>
+
+        <tr>       
+          <td>
+            <router-link to="/filhos-de-ghandy'">
+              {{ listaEscolas[2].name }}
+            </router-link>
+          </td>
+          <td class="text-right"> {{ listaEscolas[2].address }}</td>
+        </tr>
+
+        <tr>       
+          <td>
+            <router-link to="/bloco-do-minhocao">
+              {{ listaEscolas[3].name }}
+            </router-link>
+          </td>
+          <td class="text-right"> {{ listaEscolas[0].address }}</td>
+        </tr>
+
+        <tr>       
+          <td>
+            <router-link to="/galo-da-madrugada">
+              {{ listaEscolas[4].name }}
+            </router-link>
+          </td>
+          <td class="text-right"> {{ listaEscolas[4].address }}</td>
+        </tr>
+
+        <tr>       
+          <td>
+            <router-link to="/homem-da-meia-noite">
+              {{ listaEscolas[5].name }}
+            </router-link>
+          </td>
+          <td class="text-right"> {{ listaEscolas[5].address }}</td>
+        </tr>
+
+        <tr>       
+          <td>
+            <router-link to="/Eu-acho-e-pouco">
+              {{ listaEscolas[6].name }}
+            </router-link>
+          </td>
+          <td class="text-right"> {{ listaEscolas[6].address }}</td>
+        </tr>
+
+        <tr>       
+          <td>
+            <router-link to="/cordao-bola-preta">
+              {{ listaEscolas[7].name }}
+            </router-link>
+          </td>
+          <td class="text-right"> {{ listaEscolas[7].address }}</td>
+        </tr>
+
+        <tr>       
+          <td>
+            <router-link to="/banda-de-ipanema">
+              {{ listaEscolas[8].name }}
+            </router-link>
+          </td>
+          <td class="text-right"> {{ listaEscolas[8].address }}</td>
+        </tr>
+
+        <tr>       
+          <td>
+            <router-link to="/suvaco-de-cristo">
+              {{ listaEscolas[9].name }}
+            </router-link>
+          </td>
+          <td class="text-right"> {{ listaEscolas[9].address }}</td>
+        </tr>
+
+        <tr>       
+          <td>
+            <router-link to="/sargento-pimenta">
+              {{ listaEscolas[10].name }}
+            </router-link>
+          </td>
+          <td class="text-right"> {{ listaEscolas[10].address }}</td>
+        </tr>
+
       </tbody>
     </template>
   </v-simple-table>
@@ -50,10 +132,6 @@ export default {
 </script>
 
 <style scoped>
-.nao {
-    display: none;
-}
-
 a {
   text-decoration: none;
 }
